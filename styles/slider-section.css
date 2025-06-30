@@ -1,0 +1,178 @@
+.slider_section {
+  position: sticky;
+  top: 0%
+}
+
+.container_slider {
+  width: 100%;
+  height: 100vh;
+  /* max-width: 1352px; */
+  position: absolute;
+  top: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 5;
+}
+
+.main_content {
+  position: relative;
+  max-width: 1352px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.logo {
+  width: 104px;
+  margin-top: 44px;
+}
+
+.title_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 112px;
+}
+
+h1 {
+  font-family: Neue Montreal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 110.00000000000001%;
+  color: #fff;
+  /* margin-top: 648px; */
+}
+
+.title_span {
+  font-family: Nib Pro;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 72px;
+  line-height: 110.00000000000001%;
+  
+}
+
+.main_descr {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110.00000000000001%;
+  margin-top: 4px;
+  color: #DEFCFF;
+
+}
+
+.cont_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.icon_wrap {
+  display: flex;
+}
+
+.icon {
+  width: 16px;
+} 
+
+.icon img {
+  width: 100%;
+}
+
+h5 {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-left: 4px;
+}
+
+.slide_span {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-top: 4px;
+}
+
+/* #progress {
+  height: 2px;
+  background: aqua;
+} */
+
+/* .progress-bar {
+  width: 260px;
+  height: 4px;
+  background: green;
+} */
+
+/* .progress-bar span {
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background: #fff;
+} */
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 260px;
+  }
+}
+
+
+/* .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background-color: red;
+  z-index: 10;
+  transition: none;
+} */
+
+
+/* .progress-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+} */
+
+/* .progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  transition: width 0.4s linear;
+} */
+
+.pagination_main {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 0;
+}
+
+/* .swiper-slide .swiper-slide-visible .swiper-slide-fully-visible .swiper-slide-active {
+  opacity: 1;
+} */

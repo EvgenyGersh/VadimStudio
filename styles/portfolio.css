@@ -1,0 +1,159 @@
+.portfolio {
+  max-width: 1376px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+  position: relative;
+  padding-bottom: 301px;
+  /* background-image: url(../assets/images/portfolio/bg-img.png);
+  background-size: contain;
+  background-position: 0 120%;
+  background-repeat: no-repeat; */
+}
+
+.portfolio_title {
+  margin-left: 94px;
+}
+
+.portfolio_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 56px;
+  gap: 24px;
+}
+
+.portfolio_item {
+  width: 32%;
+  height: 641px;
+  position: relative;
+}
+
+.portfolio_item a {
+  display: block;
+}
+
+.portfolio_item video {
+  height: 100%;
+}
+
+.item_large {
+  width: 100%;
+  height: 617px;
+}
+
+.video_label {
+  width: 298px;
+  position: absolute;
+  top: 551px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.label_icon {
+  width: 66px;
+  height: 66px;
+}
+
+.label_icon img {
+  width: 100%;
+}
+
+.label_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+
+.label_ttl {
+  font-family: Neue Montreal;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  color: #FFFFFF;
+}
+
+.label_descr {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110.00000000000001%;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 8px;
+}
+
+.item_large .video_label {
+  top: 527px;
+}
+
+.bottom_img {
+  width: 100%;
+  /* margin-top: 24px; */
+  /* width: 1646px; */
+  /* position: absolute;
+  top: 1000px; */
+  /* margin-top: -718px; */
+}
+
+.bottom_img img {
+  max-width: 100%;
+}
+
+.portfolio_bottom {
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+.bottom_text_title {
+  font-family: Neue Montreal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  color: #000
+}
+
+.bottom_text_span {
+  font-family: Nib Pro;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  color: #000
+}
+
+.bottom_button_wrap {
+  display: flex;
+  width: 187px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px auto 0;
+}
+.bot_txt_descr {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4E4C4B;
+
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  /* text-align: center; */
+}
+
+
+.arrow_btn.black_btn {
+  background: #0A0A0C;
+  margin-left: 8px;
+  width: 33px;
+  height: 25px;
+}
+
+
+
+
+
+
+

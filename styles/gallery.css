@@ -1,0 +1,182 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 1188px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_wrap {
+  width: 100%;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gallery_items {
+  display: flex;
+  width: 100%;
+  height: 163px;
+  gap: 12px;
+  flex-grow: 1;
+  transition: all .5s ease;
+}
+
+.gallery_item {
+  position: relative;
+  width: 288px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  transition: all .5s ease;
+  border-radius:16px;
+  filter: grayscale(1);
+}
+
+.left_descr {
+  position: absolute;
+  width: 123px;
+  display: flex;
+  height: 100%;
+  align-items:center;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+}
+
+.left_descr_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.number {
+  font-family: Nib Pro;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 110.00000000000001%;
+  color: #0A0A0C;
+}
+
+.left_text {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4e4c4b;
+  
+}
+
+.right_descr {
+  position: absolute;
+  width: 123px;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  
+  right: 0;
+  opacity: 0;
+}
+
+.right_descr_wrap {
+  display: flex;
+  align-items: center;
+  
+}
+
+.right_text {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #0A0A0C;
+  /* margin-top: 10px; */
+  margin-left: 4px;
+}
+
+.arrow_btn.black_btn.left_arrow {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.arrow_btn.black_btn.left_arrow img {
+  width: 13px;
+  transform: rotate(180deg);
+}
+
+
+.gallery_item_icon {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gallery_item_title {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+.gallery_item a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius:16px
+}
+
+
+
+.gallery_item a img{
+  width: 100%;
+  height: 100%;
+  border-radius:16px
+}
+
+
+
+.gallery_items_hover {
+  height: 218px;
+}
+
+.gallery_items_high {
+  height: 109px;
+}
+
+.item_wide {
+  width: 742px;
+  filter: grayscale(0);
+}
+
+.item_wide a{ 
+  width: 471px;
+}
+
+.item_wide .left_descr { 
+  opacity: 1;
+}
+
+.item_wide .right_descr { 
+  opacity: 1;
+}
+
+.item_narrow {
+  width: 137px;
+}
