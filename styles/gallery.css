@@ -71,34 +71,7 @@
   
 }
 
-.right_descr {
-  position: absolute;
-  width: 123px;
-  height: 100%;
-  display: flex;
-  align-items:center;
-  
-  right: 0;
-  opacity: 0;
-}
 
-.right_descr_wrap {
-  display: flex;
-  align-items: center;
-  
-}
-
-.right_text {
-  font-family: Neue Montreal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 110.00000000000001%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #0A0A0C;
-  /* margin-top: 10px; */
-  margin-left: 4px;
-}
 
 .arrow_btn.black_btn.left_arrow {
   width: 32px;
@@ -142,15 +115,56 @@
   border-radius:16px
 }
 
-
-
 .gallery_item a img{
   width: 100%;
   height: 100%;
   border-radius:16px
 }
 
+/* .gallery_item_link {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius:16px
+} */
 
+/* .gallery_item_link img {
+  width: 100%;
+  height: 100%;
+  border-radius:16px
+} */
+
+
+
+.right_descr {
+  position: absolute;
+  width: 123px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  right: 0;
+  opacity: 0;
+}
+
+.right_descr a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.right_text {
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #0A0A0C;
+  /* margin-top: 10px; */
+  margin-left: 4px;
+}
 
 .gallery_items_hover {
   height: 218px;
@@ -168,6 +182,10 @@
 .item_wide a{ 
   width: 471px;
 }
+
+/* .item_wide.gallery_item_link {
+  width: 471px;
+} */
 
 .item_wide .left_descr { 
   opacity: 1;

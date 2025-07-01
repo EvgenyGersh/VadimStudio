@@ -209,7 +209,7 @@ items.forEach(item => {
 			let scrollTop = window.pageYOffset || document.documentElement.scrollTop
 			let mainSectionOffset = scrollSection.getBoundingClientRect()
 			// let reviewsSectionOffset = reviewsSection.offsetTop
-      console.log(mainSectionOffset)
+      // console.log(mainSectionOffset)
 			// if (scrollTop <= mainSectionOffset + 60) {
 			// 	menuVisible.classList.remove('nav_visible_blur')
 			// } else {
