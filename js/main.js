@@ -268,10 +268,10 @@ items.forEach(item => {
   var swiper3 = new Swiper(".mySwiper3", {
       grabCursor: true,
       direction: "vertical",
-       pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      },
+      //  pagination: {
+      //   el: ".swiper-pagination",
+      //   type: "fraction",
+      // },
       navigation: {
         nextEl: ".swiper-button-next",
         
