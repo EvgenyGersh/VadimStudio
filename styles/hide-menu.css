@@ -233,6 +233,7 @@
 .hide_footer_links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .hide_footer_link {
