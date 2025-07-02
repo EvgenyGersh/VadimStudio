@@ -169,10 +169,23 @@
   /* margin-left: 107px; */
 }
 
+.agency_bottom_photo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agency_photo {
+  width: 66px;
+  height: 66px;
+  border-radius: 24px;
+  background: #0A0A0C;
+}
+
 .slide_bottom_text {
   display: flex;
   flex-direction: column;
-  margin-left: 48px;
+  margin-left: 13px;
 }
 
 .slide_bottom_title {
@@ -208,14 +221,14 @@
 }
 
 .pagination_block {
-  width: 138px;
+  width: 148px;
   height: 25px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   top: 32px;
 }
 
@@ -395,3 +408,21 @@
   line-height: 110%;
   color: rgba(222, 252, 255, 0.8)
 }
+
+.slide_number {
+  color: rgba(222, 252, 255, 0.80);
+  font-family: "Neue Montreal";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+/* .number_sp {
+  color: rgba(222, 252, 255, 0.80);
+  font-family: "Neue Montreal";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+} */
