@@ -1,25 +1,26 @@
 const SLIDE_DURATION = 4000;
 
-// function updateProgressBars() {
-//         const bars = document.querySelectorAll('.progress-bar span');
-//         bars.forEach((bar, i) => {
-//           bar.style.animation = 'none';
-//           bar.offsetHeight; // force reflow
-//           bar.style.width = '0%';
-//           if (i === swiper.realIndex) {
-//             bar.style.animation = `progress ${SLIDE_DURATION}ms linear forwards`;
-//           }
-//         });
-//           }
-        
-          //  updateProgressBars();
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
-  slidesPerView: 4,
+
+var swiper1 = new Swiper(".mySwiper1", {
+  spaceBetween: 22,
+  slidesPerView: 1,
   freeMode: true,
   watchSlidesProgress: true,
+  next: {
+      translate: ['-100%', 0, 0],
+    },
+  breakpoints: {
+        780: {
+          slidesPerView: 4,
+        },
+        996: {
+          spaceBetween: 72,
+          slidesPerView: 4,
+        },
+      },  
 });
+
 var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
   loop: true,
@@ -33,92 +34,12 @@ var swiper2 = new Swiper(".mySwiper2", {
       },
   
   thumbs: {
-    swiper: swiper,
+    swiper: swiper1,
   },
-
-
-  // ----------------------------
-  pagination: {
-    el: ".pagination_main",
-    type: "progressbar",
-  },
-
-  
-
-  // on: {
-  //     slideChangeTransitionStart: updateProgressBars
-  //   }
-
-
-  // on: {
-  //   slideChangeTransitionStart() {
-  //     const allVideos = document.querySelectorAll('.swiper-slide video');
-  //     allVideos.forEach(v => {
-  //       v.pause();
-  //       v.currentTime = 0;
-  //     });
-
-  //     const currentSlide = swiper.slides[swiper.activeIndex];
-  //     const video = currentSlide.querySelector('video');
-  //     const progressFill = currentSlide.querySelector('.progress-fill');
-
-  //     if (video) {
-  //       video.play();
-  //       const updateProgress = () => {
-  //         const percent = (video.currentTime / video.duration) * 100;
-  //         progressFill.style.width = `${percent}%`;
-  //         if (!video.paused && !video.ended) {
-  //           requestAnimationFrame(updateProgress);
-  //         }
-  //       };
-  //       requestAnimationFrame(updateProgress);
-
-  //       video.onended = () => {
-  //         swiper.slideNext();
-  //       };
-  //     }
-  //   }
-  // }
-  
 
   });
 
-  // swiper.emit('slideChangeTransitionStart');
-
-  // -------------------------------
-
   
-    
-  
-
-  
-
-  
-
-  // function updateProgressBars() {
-  //   const bars = document.querySelectorAll('.progress-bar span');
-  //   bars.forEach((bar, i) => {
-  //     bar.style.animation = 'none';
-  //     bar.offsetHeight; // force reflow
-  //     bar.style.width = '0%';
-  //     if (i === swiper.realIndex) {
-  //       bar.style.animation = `progress ${SLIDE_DURATION}ms linear forwards`;
-  //     }
-  //   });
-  // }
-
-  // updateProgressBars();
-
-     
-  
-  
-
-
-
-
-
-
-// });
 
 const items = document.querySelectorAll('.gallery_items');
 items.forEach(item => {
@@ -200,54 +121,24 @@ items.forEach(item => {
     }
   });
 
-  window.addEventListener('scroll', () => {
-    function changeMenu() {
-			// const mainSection = document.querySelector('main')
-			const scrollSection = document.querySelector('.scroll_section')
-			const menuVisible = document.querySelector('.nav_visible_blur')
-      const menuHidden = document.querySelector('.nav_hide_blur')
-			let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-			let mainSectionOffset = scrollSection.getBoundingClientRect()
-			// let reviewsSectionOffset = reviewsSection.offsetTop
-      // console.log(mainSectionOffset)
-			// if (scrollTop <= mainSectionOffset + 60) {
-			// 	menuVisible.classList.remove('nav_visible_blur')
-			// } else {
-			// 	menuVisible.classList.add('nav_visible_blur')
-			// }
-			if (
-				// scrollTop >= mainSectionOffset &&
-				// scrollTop <= mainSectionOffset + (mainSectionOffset.clientHeight - 60)
-        // scrollTop <= mainSectionOffset.clientHeight - 60
-        mainSectionOffset.top <= 600
-      )
-       {
-				menuVisible.classList.add('menu_bg')
-        menuHidden.classList.add('menu_bg')
-			} else {
-				menuVisible.classList.remove('menu_bg')
-        menuHidden.classList.remove('menu_bg')
-			}
-		}
-		changeMenu()
-  })
+  
 
   const mobile = document.querySelector('.nav_hide')
 	const mobileOpenBtn = document.querySelector('.open')
 	const mobileCloseBtn = document.querySelector('.close')
 
 	mobileOpenBtn.addEventListener('click', () => {
-		mobile.classList.add('show_menu')
-		// mobile.classList.remove('hide_mobile_menu')
+		mobile.classList.add('show_mobile_menu')
+		mobile.classList.remove('hide_mobile_menu')
 		document.body.style.overflow = 'hidden'
 	})
 
 	const closeMobile = () => {
 		setTimeout(() => {
-			// mobile.classList.add('hide_mobile_menu')
-			mobile.classList.remove('show_menu')
+			mobile.classList.add('hide_mobile_menu')
+			mobile.classList.remove('show_mobile_menu')
 			document.body.style.overflow = ''
-		}, 300)
+		}, 200)
 	}
 
 	mobileCloseBtn.addEventListener('click', closeMobile)
@@ -259,19 +150,38 @@ items.forEach(item => {
 		
 	})
 
+  
+
 	document.addEventListener('keydown', e => {
-		if (e.code === 'Escape' && mobile.classList.contains('show_menu')) {
+		if (e.code === 'Escape' && mobile.classList.contains('show_mobile_menu')) {
 			closeMobile()
 		}
 	})
 
+  const activeLinks = document.querySelectorAll('a[href^="#"]')
+
+	const linkHide = document.querySelectorAll('.hide_items a')
+
+	activeLinks.forEach((item, i) => {
+		item.addEventListener('click', e => {
+			event.preventDefault()
+			const blockId = item.getAttribute('href')
+
+			document.querySelector('' + blockId).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			})
+
+			
+			closeMobile()
+		})
+	})
+
+
   var swiper3 = new Swiper(".mySwiper3", {
       grabCursor: true,
       direction: "vertical",
-      //  pagination: {
-      //   el: ".swiper-pagination",
-      //   type: "fraction",
-      // },
+      speed: 1000,
       navigation: {
         nextEl: ".swiper-button-next",
         
@@ -289,17 +199,15 @@ items.forEach(item => {
       },
     });
 
-  
-  
-// })
+ 
 
-const links = document.querySelectorAll('.hide_item');
+  const links = document.querySelectorAll('.hide_item');
 
   links.forEach(link => {
     const video = link.querySelector('video');
 
     link.addEventListener('mouseenter', () => {
-      // Остановить все видео
+     
       links.forEach(otherLink => {
         const otherVideo = otherLink.querySelector('video');
         if (otherVideo !== video) {
@@ -308,16 +216,38 @@ const links = document.querySelectorAll('.hide_item');
         }
       });
 
-      // Запустить текущее видео
+      
       video.play();
     });
 
     link.addEventListener('mouseleave', () => {
-      // Остановить видео при выходе курсора
+      
       video.pause();
       video.currentTime = 0;
     });
   });
+
+  const swiper4 = new Swiper('.mySwiper4', {
+    
+    speed: 1000,
+    slidesPerView: 1.6,
+    centeredSlides: true,
+    
+    breakpoints: {
+        400: {
+          slidesPerView: 1.8,
+          
+        },
+        670: {
+          slidesPerView: 2.07,
+          
+        },
+        824: {
+          slidesPerView: 2.5,
+          
+        },
+      },
+  })
 
 
 

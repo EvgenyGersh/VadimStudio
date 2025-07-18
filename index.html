@@ -17,38 +17,37 @@
 		<link rel="stylesheet" href="./styles/footer.css" />
 		<link rel="stylesheet" href="./styles/menu.css" />
 		<link rel="stylesheet" href="./styles/hide-menu.css" />
+		<link rel="stylesheet" href="./styles/galery-mobile.css" />
 	</head>
 	<body>
 		<main class="container_main">
-			 <section class="slider_section">
-					<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+			<section class="slider_section">
+					<div class="swiper mySwiper2">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
+							<div class="main_slide swiper-slide">
 								<video autoplay muted loop playsinline>
 									<source src="./assets/video/video-1.mp4" type="video/mp4">
 								</video>
 							</div>
-							<div class="swiper-slide">
+							<div class="main_slide swiper-slide">
 								<video autoplay muted loop playsinline>
 									<source src="./assets/video/galery/video2.mp4" type="video/mp4">
 								</video>
 							</div>
-							<div class="swiper-slide">
+							<div class="main_slide swiper-slide">
 								<video autoplay muted loop playsinline>
 									<source src="./assets/video/galery/video5.mp4" type="video/mp4">
 								</video>
 							</div>
-							<div class="swiper-slide">
+							<div class="main_slide swiper-slide">
 								<video autoplay muted loop playsinline>
 									<source src="./assets/video/galery/video1.mp4" type="video/mp4">
 								</video>
 							</div>
-						</div>
-						
+						</div>	
 					</div>
 					<div class="container_slider">
 						<div class="main_content">
-
 							<div class="logo">
 								<a href="#">
 									<img src="./assets/icons/Logo.svg" alt="GIGY">
@@ -58,65 +57,51 @@
 								<h1 class="visually_hidden">One <span class="title_span">focus</span>. Maximum <span class="title_span">depth</span>.</h1>
 								<p class="class_h1">One <span class="title_span">focus</span>. Maximum <span class="title_span">depth</span>.</p>
 								<p class="main_descr">Design we dive into. Technology that accelerates. Results that stand out.
-									</p>
-								<div thumbsSlider="" class="swiper mySwiper">
-									
-									<div class="swiper-pagination pagination_main"></div>
-									 
-									<div class="swiper-wrapper" style="--swiper-pagination-color: #fff">
-										
-										
-										<div class="swiper-slide">
-											
+								</p>
+								<div thumbsSlider="" class="swiper mySwiper1">									
+									<!-- <div class="swiper-pagination pagination_main"></div> -->									 
+									<div class="swiper-wrapper" style="--swiper-pagination-color: #fff">										
+										<div class="swiper-slide">							
 											<div class="cont_wrap">
 												<div class="icon_wrap">
 													<div class="icon">
 														<img src="./assets/icons/star.svg" alt="">
 													</div>
 													<h5>Brand</h5>
-												</div>
-												
+												</div>											
 												<span class="slide_span">Building a vision of longevity and a new dawn for healthcare.</span>
-											</div>
-											
+											</div>										
 										</div>
-										<div class="swiper-slide">
-											
+										<div class="swiper-slide">										
 											<div class="cont_wrap">
 												<div class="icon_wrap">
 													<div class="icon">
 													<img src="./assets/icons/star.svg" alt="">
 												</div>
 												<h5>Product</h5>
-												</div>
-												
+												</div>											
 												<span class="slide_span">Building a vision of longevity and a new dawn for healthcare.</span>
 											</div>
 										</div>
-										<div class="swiper-slide">
-											
+										<div class="swiper-slide">										
 											<div class="cont_wrap">
 												<div class="icon_wrap">
-
 												<div class="icon">
 													<img src="./assets/icons/star.svg" alt="">
 												</div>
 												<h5>Web</h5>
-												</div>
-												
+												</div>												
 												<span class="slide_span">Building a vision of longevity and a new dawn for healthcare.</span>
 											</div>
 										</div>
-										<div class="swiper-slide">
-											
+										<div class="swiper-slide">										
 											<div class="cont_wrap">
 												<div class="icon_wrap">
 													<div class="icon">
 													<img src="./assets/icons/star.svg" alt="">
 												</div>
 												<h5>All</h5>
-												</div>
-												
+												</div>											
 												<span class="slide_span">Building a vision of longevity and a new dawn for healthcare.</span>
 											</div>
 										</div>
@@ -124,322 +109,456 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					
-			</section> 
+					</div>				
+			</section>
 			<section class="scroll_section" >
 				<div class="scroll_wrap" id="stretch_section">
 					<div class="gallery">
-					<div class="gallery_title">
-						<h2 class="scroll_title">Only <span class="scroll_sp">expertise</span>. Only <span class="scroll_sp">design</span>.</h2>
-						<span class="scroll_descr">Each of our solutions is the result of experience proven in real projects.</span>
+						<div class="gallery_title">
+							<h2 class="scroll_title">Only <span class="scroll_sp">expertise</span>. Only <span class="scroll_sp">design</span>.</h2>
+							<span class="scroll_descr">Each of our solutions is the result of experience proven in real projects.</span>
+						</div>
+						<div class="gallery_wrap desctop_gallery">
+							<div class="gallery_items gallery_wrap1">
+								<div class="gallery_item item1 " >
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>								
+										<a href="#" class="gallery_item_link">
+											<img src="assets/images/galery/poster1.png" alt="IMAGE">
+										</a>								
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">FinTech</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>
+								<div class="gallery_item item1 ">
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster2.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">EdTech</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>
+								<div class="gallery_item item1 ">
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster5.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">Saas</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>									
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>
+								<div class="gallery_item item1 ">
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster3.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">HealthTech</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="gallery_items galery_wrap2 ">
+								<div class="gallery_item item2" >
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster4.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">AI</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>							
+								<div class="gallery_item item2">
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster5.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">UX & UI</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>							
+								<div class="gallery_item item2">
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster2.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">Design support</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>							
+								<div class="gallery_item item2">
+									<div class="left_descr">
+										<div class="left_descr_wrap">
+											<span class="number">10+</span>
+											<span class="left_text">Saas projects</span>
+										</div>
+									</div>
+									<a href="#">
+										<img src="assets/images/galery/poster1.png" alt="IMAGE">
+									</a>
+									<div class="gallery_item_icon">
+										<img src="./assets/icons/galery-icon.svg" alt="">
+									</div>
+									<span class="gallery_item_title">Product design</span>
+									<div class="right_descr">
+										<a href="#" class="right_descr_wrap">										
+												<button class="arrow_btn black_btn left_arrow">
+													<img src="./assets/icons/arrow-btn-white.svg" alt="">
+												</button>										
+												<span class="right_text">See more</span>
+										</a>
+									</div>
+								</div>							
+							</div>
+						</div>
+						<div class=" gallery_mobile_wrap ">						
+							<div class="swiper mySwiper4">
+									<div class="swiper-wrapper">
+										<div class=" swiper-slide mobile_slide" >
+											<div class="left_descr">
+												<div class="left_descr_wrap">
+													<span class="number">10+</span>
+													<span class="left_text">Saas projects</span>
+												</div>
+											</div>
+											<a href="#">
+												<img src="assets/images/galery/poster4.png" alt="IMAGE">
+											</a>
+											<div class="gallery_item_icon">
+												<img src="./assets/icons/galery-icon.svg" alt="">
+											</div>
+											<div class="right_mobile_descr">
+												<div class="right_descr_wrap">
+														<span class="right_mobile_text">AI</span>
+														<a href="#" class="arrow_btn white_btn left_arrow right_mobile_link">
+															<img src="./assets/icons/arrow-btn.svg" alt="">
+														</a>
+												</div>
+											</div>
+											<div class="bottom_img">
+												<img src="./assets/icons/bottom-descr-img1.svg" alt="">
+											</div>
+										</div>									
+										<div class="mobile_slide swiper-slide">
+											<div class="left_descr">
+												<div class="left_descr_wrap">
+													<span class="number">10+</span>
+													<span class="left_text">Saas projects</span>
+												</div>
+											</div>
+											<a href="#">
+												<img src="assets/images/galery/poster5.png" alt="IMAGE">
+											</a>
+											<div class="gallery_item_icon">
+												<img src="./assets/icons/galery-icon.svg" alt="">
+											</div>
+											<span class="gallery_item_title">UX & UI</span>
+											<div class="right_mobile_descr">
+												<div class="right_descr_wrap">
+														<span class="right_mobile_text">UX & UI</span>
+														<a href="#" class="arrow_btn white_btn left_arrow right_mobile_link">
+															<img src="./assets/icons/arrow-btn.svg" alt="">
+														</a>
+												</div>
+											</div>
+											<div class="bottom_img">
+												<img src="./assets/icons/bottom-descr-img1.svg" alt="">
+											</div>
+										</div>
+										<div class="mobile_slide swiper-slide ">
+											<div class="left_descr">
+												<div class="left_descr_wrap">
+													<span class="number">10+</span>
+													<span class="left_text">Saas projects</span>
+												</div>
+											</div>
+											<a href="#">
+												<img src="assets/images/galery/poster2.png" alt="IMAGE">
+											</a>
+											<div class="gallery_item_icon">
+												<img src="./assets/icons/galery-icon.svg" alt="">
+											</div>
+											<span class="gallery_item_title">Design support</span>
+											<div class="right_mobile_descr">
+												<div class="right_descr_wrap">
+														<span class="right_mobile_text">Design support</span>
+														<a href="#" class="arrow_btn white_btn left_arrow right_mobile_link">
+															<img src="./assets/icons/arrow-btn.svg" alt="">
+														</a>
+												</div>
+											</div>
+											<div class="bottom_img">
+												<img src="./assets/icons/bottom-descr-img1.svg" alt="">
+											</div>
+										</div>
+										<div class="mobile_slide swiper-slide ">
+											<div class="left_descr">
+												<div class="left_descr_wrap">
+													<span class="number">10+</span>
+													<span class="left_text">Saas projects</span>
+												</div>
+											</div>
+											<a href="#">
+												<img src="assets/images/galery/poster1.png" alt="IMAGE">
+											</a>
+											<div class="gallery_item_icon">
+												<img src="./assets/icons/galery-icon.svg" alt="">
+											</div>
+											<span class="gallery_item_title">Product design</span>
+											<div class="right_mobile_descr">
+												<div class="right_descr_wrap">
+														<span class="right_mobile_text">Product design</span>
+														<a href="#" class="arrow_btn white_btn left_arrow right_mobile_link">
+															<img src="./assets/icons/arrow-btn.svg" alt="">
+														</a>
+												</div>
+											</div>
+											<div class="bottom_img">
+												<img src="./assets/icons/bottom-descr-img1.svg" alt="">
+											</div>
+										</div>
+										<div class="mobile_slide swiper-slide">
+											<div class="left_descr">
+												<div class="left_descr_wrap">
+													<span class="number">10+</span>
+													<span class="left_text">Saas projects</span>
+												</div>
+											</div>
+											<a href="#">
+												<img src="assets/images/galery/poster5.png" alt="IMAGE">
+											</a>
+											<div class="gallery_item_icon">
+												<img src="./assets/icons/galery-icon.svg" alt="">
+											</div>
+											<span class="gallery_item_title">UX & UI</span>
+											<div class="right_mobile_descr">
+												<div class="right_descr_wrap">
+														<span class="right_mobile_text">UX & UI</span>
+														<a href="#" class="arrow_btn white_btn left_arrow right_mobile_link">
+															<img src="./assets/icons/arrow-btn.svg" alt="">
+														</a>
+												</div>
+											</div>
+											<div class="bottom_img">
+												<img src="./assets/icons/bottom-descr-img1.svg" alt="">
+											</div>
+										</div>
+										<div class="mobile_slide swiper-slide">
+											<div class="left_descr">
+												<div class="left_descr_wrap">
+													<span class="number">10+</span>
+													<span class="left_text">Saas projects</span>
+												</div>
+											</div>
+											<a href="#">
+												<img src="assets/images/galery/poster5.png" alt="IMAGE">
+											</a>
+											<div class="gallery_item_icon">
+												<img src="./assets/icons/galery-icon.svg" alt="">
+											</div>
+											<span class="gallery_item_title">UX & UI</span>
+											<div class="right_mobile_descr">
+												<div class="right_descr_wrap">
+														<span class="right_mobile_text">UX & UI</span>
+														<a href="#" class="arrow_btn white_btn left_arrow right_mobile_link">
+															<img src="./assets/icons/arrow-btn.svg" alt="">
+														</a>
+												</div>
+											</div>
+											<div class="bottom_img">
+												<img src="./assets/icons/bottom-descr-img1.svg" alt="">
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>						
 					</div>
-					<div class="gallery_wrap">
-						<div class="gallery_items gallery_wrap1">
-							<div class="gallery_item item1 " >
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								
-									<a href="#" class="gallery_item_link">
-									<img src="assets/images/galery/poster1.png" alt="IMAGE">
-								</a>
-								
-								
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">FinTech</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										<!-- <span class="right_btn"> -->
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										<!-- </span> -->
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							<div class="gallery_item item1 ">
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								<a href="#">
-									<img src="assets/images/galery/poster2.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">EdTech</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										<!-- <span class="right_btn"> -->
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										<!-- </span> -->
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							<div class="gallery_item item1 ">
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								<a href="#">
-									<img src="assets/images/galery/poster5.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">Saas</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										<!-- <span class="right_btn"> -->
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										<!-- </span> -->
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							<div class="gallery_item item1 ">
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								<a href="#">
-									<img src="assets/images/galery/poster3.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">HealthTech</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
+					<div class="portfolio">
+						<div class="portfolio_title">
+							<h2 class="scroll_title">One <span class="scroll_sp">focus</span>. Maximum <span class="scroll_sp">depth</span>.</h2>
+							<span class="scroll_descr">Design we dive into. Technology that accelerates. Results that stand out.</span>
 						</div>
-						<div   class="gallery_items galery_wrap2 ">
-							<div class="gallery_item item2" >
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
+						<div class="portfolio_items">
+							<div class="portfolio_item item_large">
+								<a href="#">
+									<video autoplay muted loop poster="assets/images/portfolio/portf-pre-large.png">
+									<source src="" type="video/mp4">
+									</video>
+								</a>
+								<div class="video_label">
+									<div class="label_icon">
+										<img src="./assets/icons/logo-portfol-dark.svg" alt="GIGY">
+									</div>
+									<div class="label_text">
+										<div class="label_ttl">G-booking</div>
+										<div class="label_descr">Brand, Web, Produkt,AI</div>
 									</div>
 								</div>
+							</div>
+							<div class="portfolio_item">
 								<a href="#">
-									<img src="assets/images/galery/poster4.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">AI</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							
-							<div class="gallery_item item2">
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								<a href="#">
-									<img src="assets/images/galery/poster5.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">UX & UI</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							
-							<div class="gallery_item item2">
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								<a href="#">
-									<img src="assets/images/galery/poster2.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">Design support</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							
-							<div class="gallery_item item2">
-								<div class="left_descr">
-									<div class="left_descr_wrap">
-										<span class="number">10+</span>
-										<span class="left_text">Saas projects</span>
-									</div>
-								</div>
-								<a href="#">
-									<img src="assets/images/galery/poster1.png" alt="IMAGE">
-								</a>
-								<div class="gallery_item_icon">
-									<img src="./assets/icons/galery-icon.svg" alt="">
-								</div>
-								<span class="gallery_item_title">Product design</span>
-								<div class="right_descr">
-									<a href="#" class="right_descr_wrap">
-										
-											<button class="arrow_btn black_btn left_arrow">
-												<img src="./assets/icons/arrow-btn-white.svg" alt="">
-											</button>
-										
-											<span class="right_text">See more</span>
-									</a>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="portfolio">
-					<div class="portfolio_title">
-						<h2 class="scroll_title">One <span class="scroll_sp">focus</span>. Maximum <span class="scroll_sp">depth</span>.</h2>
-						<span class="scroll_descr">Design we dive into. Technology that accelerates. Results that stand out.</span>
-					</div>
-					<div class="portfolio_items">
-						<div class="portfolio_item item_large">
-							<a href="#">
-								<video autoplay muted loop poster="assets/images/portfolio/portf-pre-large.png">
-								<source src="" type="video/mp4">
-								</video>
-							</a>
-							<div class="video_label">
-								<div class="label_icon">
-									<img src="./assets/icons/logo-portfol-dark.svg" alt="GIGY">
-								</div>
-								<div class="label_text">
-									<div class="label_ttl">G-booking</div>
-									<div class="label_descr">Brand, Web, Produkt,AI</div>
-								</div>
-							</div>
-						</div>
-						<div class="portfolio_item">
-							<a href="#">
-								<video autoplay muted loop poster="assets/images/portfolio/portf-pre-1.png">
-								<source src="" type="video/mp4">
-							</video>
-							</a>
-							<div class="video_label">
-								<div class="label_icon">
-									<img src="./assets/icons/logo-portfol-whitte.svg" alt="GIGY">
-								</div>
-								<div class="label_text">
-									<div class="label_ttl">G-booking</div>
-									<div class="label_descr">Brand, Web, Produkt,AI</div>
-								</div>
-							</div>
-						</div>
-						<div class="portfolio_item">
-							<a href="#">
-								<video autoplay muted loop poster="assets/images/portfolio/portf-pre2.png">
+									<video autoplay muted loop poster="assets/images/portfolio/portf-pre-1.png">
 									<source src="" type="video/mp4">
 								</video>
-							</a>
-							<div class="video_label">
-								<div class="label_icon">
-									<img src="./assets/icons/logo-portfol-whitte.svg" alt="GIGY">
-								</div>
-								<div class="label_text">
-									<div class="label_ttl">G-booking</div>
-									<div class="label_descr">Brand, Web, Produkt,AI</div>
-								</div>
-							</div>
-						</div>
-						<div class="portfolio_item">
-							<a href="#">
-								<video autoplay muted loop poster="assets/images/portfolio/portf-pre3.png">
-								<source src="" type="video/mp4">
-							</video>
-							</a>
-							<div class="video_label">
-								<div class="label_icon">
-									<img src="./assets/icons/logo-portfol-whitte.svg" alt="GIGY">
-								</div>
-								<div class="label_text">
-									<div class="label_ttl">G-booking</div>
-									<div class="label_descr">Brand, Web, Produkt,AI</div>
+								</a>
+								<div class="video_label">
+									<div class="label_icon">
+										<img src="./assets/icons/logo-portfol-whitte.svg" alt="GIGY">
+									</div>
+									<div class="label_text">
+										<div class="label_ttl">G-booking</div>
+										<div class="label_descr">Brand, Web, Produkt,AI</div>
+									</div>
 								</div>
 							</div>
+							<div class="portfolio_item">
+								<a href="#">
+									<video autoplay muted loop poster="assets/images/portfolio/portf-pre2.png">
+										<source src="" type="video/mp4">
+									</video>
+								</a>
+								<div class="video_label">
+									<div class="label_icon">
+										<img src="./assets/icons/logo-portfol-whitte.svg" alt="GIGY">
+									</div>
+									<div class="label_text">
+										<div class="label_ttl">G-booking</div>
+										<div class="label_descr">Brand, Web, Produkt,AI</div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio_item last_item">
+								<a href="#">
+									<video autoplay muted loop poster="assets/images/portfolio/portf-pre3.png">
+									<source src="" type="video/mp4">
+								</video>
+								</a>
+								<div class="video_label">
+									<div class="label_icon">
+										<img src="./assets/icons/logo-portfol-whitte.svg" alt="GIGY">
+									</div>
+									<div class="label_text">
+										<div class="label_ttl">G-booking</div>
+										<div class="label_descr">Brand, Web, Produkt,AI</div>
+									</div>
+								</div>
+							</div>
+							<div class="bottom_portfolio_img">
+								<img src="./assets/images/portfolio/bg-img.png" alt="">
+							</div>
 						</div>
-						<div class="bottom_img">
-							<img src="./assets/images/portfolio/bg-img.png" alt="">
+						<div class="portfolio_bottom">
+							<h2 class="bottom_text_title">One <span class="bottom_text_span">focus</span>. Maximum <span class="bottom_text_span">depth</span>.</h2>
+							<div class="bottom_button_wrap">
+								<span class="bot_txt_descr">View 20+ works</span>
+								<button class="arrow_btn black_btn">
+										<img src="./assets/icons/arrow-btn-white.svg" alt="">
+									</button>
+							</div>						
 						</div>
-					</div>
-					<div class="portfolio_bottom">
-						<h2 class="bottom_text_title">One <span class="bottom_text_span">focus</span>. Maximum <span class="bottom_text_span">depth</span>.</h2>
-						<div class="bottom_button_wrap">
-							<span class="bot_txt_descr">View 20+ works</span>
-							<button class="arrow_btn black_btn">
-									<img src="./assets/icons/arrow-btn-white.svg" alt="">
-								</button>
-						</div>
-						
-					</div>
-				</div>
-				
-				</div>
-				
+					</div>			
+				</div>			
 				<div class="agency">
 					<div class="agency_wrap">
 						<div class="agency_descr">
-							<span class="agency_title">See what clients <span class="agency_sp">say about</span> cooperation. Gigy <span class="agency_sp">Agency</span>.</span>
+							<span class="agency_title">See what clients <span class="agency_sp">say about </span>cooperation. Gigy <span class="agency_sp">Agency</span>.</span>
 							<p class="agency_text">Discover firsthand experiences from our clients about their journey with Fourmeta®Agency—insights into our collaboration, expertise, and results delivered.</p>
 							<div class="agency_buttons">
 								<button class="talk_btn">Let's talk</button>
@@ -450,11 +569,8 @@
 						</div>
 						<div class="agency_slider">
 							<div class="sliider_bg"><img src="./assets/images/agency/agency-bg.png" alt="image"></div>
-							<div class="swiper mySwiper3">
-								
-								<!-- <div class="swiper-pagination"></div> -->
-    						<div class="swiper-wrapper">
-									
+							<div class="swiper mySwiper3">							
+    						<div class="swiper-wrapper">								
 									<div class="agency_slide swiper-slide">
 										<div class="pagination_block">
 											<div class="swiper-button-next agency_next_btn">
@@ -466,25 +582,22 @@
 											</div>
 											<div class="swiper-button-prev agency_prev_btn">
 											</div>
-										</div>
-										
+										</div>									
 										<p class="agency_slide_txt">“What struck us most about Fourmeta was their unwavering commitment to meeting challenging deadlines and seamlessly aligning with our brand identity guidelines.”</p>
 										<div class="agency_slide_bottom">
 											<div class="agency_bottom_photo">
 												<div class="agency_photo">
-													<!-- <img src="" alt=""> -->
+													<img src="" alt="">
 												</div>
 												<div class="slide_bottom_text">
 													<p class="slide_bottom_title">Marin Njavro</p>
 													<p class="slide_bottom_txt">CEO Luxsenburg School of Cuni</p>
 												</div>
-											</div>
-											
+											</div>										
 											<div class="slide_bottom_link">
 												<img src="./assets/icons/in.svg" alt="IN">
 											</div>
-										</div>
-									
+										</div>								
 									</div>
 									<div class="agency_slide swiper-slide">
 										<div class="pagination_block">
@@ -502,19 +615,17 @@
 										<div class="agency_slide_bottom">
 											<div class="agency_bottom_photo">
 												<div class="agency_photo">
-													<!-- <img src="" alt=""> -->
+													<img src="" alt="">
 												</div>
 												<div class="slide_bottom_text">
 													<p class="slide_bottom_title">Marin Njavro</p>
 													<p class="slide_bottom_txt">CEO Luxsenburg School of Cuni</p>
 												</div>
-											</div>
-											
+											</div>										
 											<div class="slide_bottom_link">
 												<img src="./assets/icons/in.svg" alt="IN">
 											</div>
-										</div>
-									
+										</div>								
 									</div>
 									<div class="agency_slide swiper-slide">
 										<div class="pagination_block">
@@ -532,25 +643,25 @@
 										<div class="agency_slide_bottom">
 											<div class="agency_bottom_photo">
 												<div class="agency_photo">
-													<!-- <img src="" alt=""> -->
+													<img src="" alt="">
 												</div>
 												<div class="slide_bottom_text">
 													<p class="slide_bottom_title">Marin Njavro</p>
 													<p class="slide_bottom_txt">CEO Luxsenburg School of Cuni</p>
 												</div>
-											</div>
-											
+											</div>										
 											<div class="slide_bottom_link">
 												<img src="./assets/icons/in.svg" alt="IN">
 											</div>
-										</div>
-									
+										</div>								
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<footer>
+					</div>				
+				</div>
+				<footer>
+					<div class="footer_wrap">
 						<div class="copyrigt">
 							<a href="#" class="copyrigt_text">GIGY.Studio © 2025</a>
 						</div>
@@ -566,12 +677,10 @@
 							<div class="link_wrap">
 								<a href="#" class="footer_link">Instagram</a>
 								<a href="#"class="footer_icon">	<img src="./assets/icons/footer-arrow.svg" alt="Instagram"></a>
-							</div>
-							
-							
+							</div>						
 						</div>
-					</footer>
-				</div>
+					</div>
+				</footer> 
 			</section>
 		</main>
 		<div class="menu_fixed">
@@ -582,9 +691,7 @@
 							<div class="hide_logo">
 								<a href="#">
 									<img src="./assets/icons/Logo.svg" alt="studio">
-								</a>
-								
-								
+								</a>							
 							</div>
 							<div class="language_toggle">
 								<a href="#" class="lang_wrap lang_wrap_active">
@@ -599,13 +706,12 @@
 							<div class="bottom_line"></div>
 						</div>	
 						<div class="hide_items">
-							<a href="#" class="hide_item">
+							<a href="./" class="hide_item">
 								<div class="item_left_wrap">
 									<div class="hide_item_img">
-										<video paused muted loop playsinline>
+										<video  muted loop playsinline>
 											<source src="./assets/video/galery/video1.mp4" type="video/mp4">
-										</video>
-										
+										</video>									
 									</div>
 									<div class="hide_item_descr">
 										<p>Homepage</p>
@@ -616,10 +722,10 @@
 								</div>
 								<div class="bottom_line"></div>
 							</a>
-							<a href="#"  class="hide_item">
+							<a href="./"  class="hide_item">
 								<div class="item_left_wrap">
 									<div class="hide_item_img">
-										<video paused muted loop playsinline>
+										<video  muted loop playsinline>
 											<source src="./assets/video/galery/video2.mp4" type="video/mp4">
 										</video>
 									</div>
@@ -631,12 +737,11 @@
 									<img src="" alt="">
 								</div>
 								<div class="bottom_line"></div>
-							</a>
-							
-							<a href="#" class="hide_item">
+							</a>						
+							<a href="./" class="hide_item">
 								<div class="item_left_wrap">
 									<div class="hide_item_img">
-										<video paused muted loop playsinline>
+										<video  muted loop playsinline>
 											<source src="./assets/video/galery/video3.mp4" type="video/mp4">
 										</video>
 									</div>
@@ -648,12 +753,11 @@
 									<img src="" alt="">
 								</div>
 								<div class="bottom_line"></div>
-							</a>
-							
-							<a href="#"  class="hide_item">
+							</a>						
+							<a href="./"  class="hide_item">
 								<div class="item_left_wrap">
 									<div class="hide_item_img">
-										<video paused muted loop playsinline>
+										<video muted loop playsinline>
 											<source src="./assets/video/galery/video4.mp4" type="video/mp4">
 										</video>
 									</div>
@@ -667,10 +771,10 @@
 								</div>
 								<div class="bottom_line"></div>
 							</a>
-							<a href="#"  class="hide_item">
+							<a href="./"  class="hide_item">
 								<div class="item_left_wrap">
 									<div class="hide_item_img">
-										<video paused muted loop playsinline>
+										<video  muted loop playsinline>
 											<source src="./assets/video/galery/video5.mp4" type="video/mp4">
 										</video>
 									</div>
@@ -682,8 +786,7 @@
 									<img src="" alt="">
 								</div>
 								<div class="bottom_line"></div>
-							</a>
-							
+							</a>						
 						</div>
 						<div class="nav_hide_footer">
 							<div class="hide_footer_links">
@@ -698,8 +801,7 @@
 								</button>
 					</div>
 						</div>
-					</div>
-				 
+					</div>			 
 				</nav>
 				<nav class="nav_visible">
 					<div class="nav_visible_blur">
@@ -717,11 +819,9 @@
 							<img src="./assets/icons/plus.svg" alt="open">
 						</button>
 					</div>
-					</div>
-					
+					</div>				
 				</nav>
-			</div>
-			
+			</div>		
 		</div>
 		 
 		 

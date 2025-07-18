@@ -6,11 +6,8 @@
 .container_slider {
   width: 100%;
   height: 100vh;
-  /* max-width: 1352px; */
   position: absolute;
   top: 0;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +46,7 @@
   font-size: 72px;
   line-height: 110.00000000000001%;
   color: #fff;
-  /* margin-top: 648px; */
+  
 }
 
 .title_span {
@@ -110,23 +107,7 @@ h5 {
   margin-top: 4px;
 }
 
-/* #progress {
-  height: 2px;
-  background: aqua;
-} */
 
-/* .progress-bar {
-  width: 260px;
-  height: 4px;
-  background: green;
-} */
-
-/* .progress-bar span {
-  position: absolute;
-  height: 2px;
-  width: 0%;
-  background: #fff;
-} */
 
 @keyframes progress {
   from {
@@ -138,33 +119,6 @@ h5 {
 }
 
 
-/* .progress-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 0%;
-  background-color: red;
-  z-index: 10;
-  transition: none;
-} */
-
-
-/* .progress-bar {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.3);
-} */
-
-/* .progress-fill {
-  width: 0%;
-  height: 100%;
-  background: #fff;
-  transition: width 0.4s linear;
-} */
 
 .pagination_main {
   width: 100%;
@@ -173,6 +127,65 @@ h5 {
   top: 0;
 }
 
-/* .swiper-slide .swiper-slide-visible .swiper-slide-fully-visible .swiper-slide-active {
-  opacity: 1;
-} */
+
+
+@media (max-width: 1400px) {
+  .main_content {
+    margin-left: 44px;
+  }
+  .class_h1 {
+    font-size: 66px;
+  }
+  .title_span {
+    font-size: 66px;
+  }
+  
+}
+
+@media (max-width: 1220px) {
+  .main_content {
+    margin-left: 44px;
+  }
+  .class_h1 {
+    font-size: 62px;
+  }
+  .title_span {
+    font-size: 62px;
+  }
+  .main_descr {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1026px) {
+  .main_content {
+    margin-left: 44px;
+  }
+  .class_h1 {
+    font-size: 56px;
+  }
+  .title_span {
+    font-size: 56px;
+  }
+  .main_descr {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 993px) {
+  .class_h1 {
+    display: none;
+  }
+  .title_span {
+    display: none;;
+  }
+  .main_descr {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .cont_wrap {
+    max-width: 220px;
+  }
+}

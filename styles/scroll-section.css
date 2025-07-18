@@ -1,40 +1,29 @@
 .scroll_section {
-  /* width: calc(100% - 44px);
-  backdrop-filter: blur(100px);
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 22px;
-  height: 100%;
-  margin: 0 auto; */
-  background-color: #1E1E1E;
-  
+  background-color: #1E1E1E;  
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 120px;
 }
 
 .scroll_wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: calc(100% - 44px); */
   backdrop-filter: blur(100px);
   background: rgba(255, 255, 255, 0.9);
   border-radius: 22px;
   height: 100%;
   margin: 0 auto;
-  padding-top: 132px;
-  /* transition: all .5s ease-in-out; */
+  padding: 132px 0px 268px;
+  overflow: hidden;
 }
-
-
 
 .scroll_title {
   font-family: Neue Montreal;
   font-weight: 500;
   font-size: 44px;
   line-height: 110.00000000000001%;
-
-
 }
 
 .scroll_sp {
@@ -43,8 +32,6 @@
   font-style: italic;
   font-size: 44px;
   line-height: 110.00000000000001%;
-  
-
 }
 
 .scroll_descr {
@@ -54,5 +41,22 @@
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
   text-align: center;
-
 }
+
+@media (max-width: 769px) {
+  .scroll_section {
+      padding-bottom: 100px;
+  } 
+  .scroll_wrap {
+    padding: 77px 0px 185px;
+  }
+}
+
+@media (max-width: 376px) {
+  
+  .scroll_wrap {
+    padding: 77px 0px 161px;
+  }
+}
+
+
