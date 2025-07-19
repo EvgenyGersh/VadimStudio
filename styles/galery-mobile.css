@@ -84,6 +84,7 @@
   left: 50%; 
   bottom: -90px;
   transform: translateX(-50%);
+  z-index: -1;
   display: none;
 }
 

@@ -1,7 +1,8 @@
 const SLIDE_DURATION = 4000;
 
 
-
+const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
 var swiper1 = new Swiper(".mySwiper1", {
   spaceBetween: 22,
   slidesPerView: 1,
@@ -19,6 +20,14 @@ var swiper1 = new Swiper(".mySwiper1", {
           slidesPerView: 4,
         },
       },  
+
+
+   on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
@@ -179,7 +188,7 @@ items.forEach(item => {
 
 
   var swiper3 = new Swiper(".mySwiper3", {
-      grabCursor: true,
+      
       direction: "vertical",
       speed: 1000,
       navigation: {
@@ -226,9 +235,9 @@ items.forEach(item => {
       video.currentTime = 0;
     });
   });
-
+  const isMobile = window.innerWidth <= 768;
   const swiper4 = new Swiper('.mySwiper4', {
-    
+    allowTouchMove: !isMobile ? true : false,
     speed: 1000,
     slidesPerView: 1.6,
     centeredSlides: true,

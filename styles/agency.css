@@ -114,7 +114,7 @@
 
 .mySwiper3 .swiper-wrapper {
   height: 100%;
-  
+  overflow: hidden;
 }
 .agency_slide.swiper-slide {
   position: relative;

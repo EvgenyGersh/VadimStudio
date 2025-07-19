@@ -189,3 +189,9 @@ h5 {
     max-width: 220px;
   }
 }
+
+@media (max-width: 510px) {
+  .title_wrap {
+    margin-top: 210px;
+  }
+}
