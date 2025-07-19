@@ -186,9 +186,9 @@ items.forEach(item => {
 		})
 	})
 
-
+  const isMobile = window.innerWidth <= 518;
   var swiper3 = new Swiper(".mySwiper3", {
-      
+      allowTouchMove: !isMobile ? true : false,
       direction: "vertical",
       speed: 1000,
       navigation: {
@@ -235,9 +235,9 @@ items.forEach(item => {
       video.currentTime = 0;
     });
   });
-  const isMobile = window.innerWidth <= 768;
+  
   const swiper4 = new Swiper('.mySwiper4', {
-    allowTouchMove: !isMobile ? true : false,
+    
     speed: 1000,
     slidesPerView: 1.6,
     centeredSlides: true,
